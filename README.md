@@ -4,7 +4,7 @@ SMS ONE TIME
 
 This is a private members script.
 
-The login in nice and secure and members can only access the site if they hold a valid mobile number.
+The login is nice and secure and members can only access the site if they hold a valid mobile number.
 
 It will text them a one time code to access the site and then allow them to view the private.php file's contents.
 
