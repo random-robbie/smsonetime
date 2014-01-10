@@ -2,7 +2,7 @@ SMS ONE TIME
 -------------
 
 
-This is a private members script.
+This is a private members script that uses PHP, MYSQL, JQUERY MOBILE and SMS.
 
 The login is nice and secure and members can only access the site if they hold a valid mobile number.
 
@@ -14,13 +14,12 @@ It is based on a how to from [here] (http://forums.devshed.com/php-faqs-and-stic
 
 I have intergrated textlocal to send the SMS but you can easily alter this in the functions file.
 
-
-
 Edit the common.php file to enter your mysql details and in functions.php fill in your textlocal account details.
 
 Don't forget to import the users.sql file!
 
 tested on lighthttpd but apache should work fine.
+
 
 
 
