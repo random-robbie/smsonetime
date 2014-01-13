@@ -12,7 +12,7 @@ No Mobile numbers are stored in the database so you do not have to worry if you 
 
 It is based on a how to from [here] (http://forums.devshed.com/php-faqs-and-stickies-167/how-to-program-a-basic-but-secure-login-system-using-891201.html)
 
-I have intergrated textlocal to send the SMS but you can easily alter this in the functions file.
+I have integrated textlocal to send the SMS but you can easily alter this in the functions file.
 
 Edit the common.php file to enter your mysql details and in functions.php fill in your textlocal account details.
 

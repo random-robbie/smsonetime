@@ -21,7 +21,6 @@
 
 	
 function entermob() {
-GLOBAL $error;
 header2();
 $user = $_SESSION['user']['id'];
 echo'
@@ -32,9 +31,13 @@ echo'
 		     Mobile Number: <input type="text" name="number">
 		 <input type="hidden" name="user" value="'.$user.'">
    <br><br>
-   <input type="submit" name="submit" data-inline="true" value="Submit"> 
-</form><div id="results">';
+   <input type="submit" name="submit" data-inline="true" value="Submit Number"> 
+</form><div id="results">'; if ((isset($error) ));
+
+ 
+
 footer2();
+
 }	
 
 function entercode () {
@@ -47,31 +50,36 @@ echo '
           <h2><label>Enter Verification Code</label></h2>
 		     Verification Code: <input type="text" name="code">
    <br><br>
-   <input type="submit" name="submit" data-inline="true" value="Submit"> 
+   <input type="submit" name="submit" data-inline="true" value="Submit Code"> 
 </form><div id="results">';
+if ((isset($error) ));
+
+footer2();
 }
 
-if (isset($_GET['error']) && $_GET['error'] == 'shortnum') {
+
+
+if (isset($_REQUEST['error']) && $_REQUEST['error'] == 'shortnum') {
 entermob();
-$error = $shortnum;
+echo $shortnum;
 }
-if (isset($_GET['error']) && $_GET['error'] == 'startnum') {
+if (isset($_REQUEST['error']) && $_REQUEST['error'] == 'startnum') {
 entermob();
-$error = $startnum;
+echo $startnum;
 }
-if (isset($_GET['error']) && $_GET['error'] == 'api') {
+if (isset($_REQUEST['error']) && $_REQUEST['error'] == 'api') {
 entermob();
-$error = $apierror;
+echo $apierror;
 }
 if (empty($_GET)) {
 entermob();
 }
-if (isset($_GET['confirm']) && $_GET['confirm'] == 'yes') {
+if (isset($_REQUEST['confirm']) && $_REQUEST['confirm'] == 'yes') {
 entercode();
 }
-if (isset($_GET['error']) && $_GET['error'] == 'wrong') {
+if (isset($_REQUEST['error']) && $_REQUEST['error'] == 'wrong') {
 entercode();
-$error = $wrongsmskey;
+echo $wrongsmskey;
 }
 
 
