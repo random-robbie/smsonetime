@@ -22,8 +22,4 @@ tested on lighthttpd but apache should work fine.
 
 
 
-
-To Do:
------
-
-Make Errors show up correctly.
+Any Issues or happy to donate via paypal txt3rob@gmail.com
