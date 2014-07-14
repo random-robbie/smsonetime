@@ -14,7 +14,7 @@ It is based on a how to from [here] (http://forums.devshed.com/php-faqs-and-stic
 
 I have integrated textlocal to send the SMS but you can easily alter this in the functions file.
 
-Edit the common.php file to enter your mysql details and in functions.php fill in your textlocal account details.
+Edit the common.php file to enter your mysql details and  fill in your textlocal account details.
 
 Don't forget to import the users.sql file!
 
