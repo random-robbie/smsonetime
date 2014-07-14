@@ -75,7 +75,7 @@ $sth = $db->prepare('SELECT * FROM users WHERE username = :username ');
 
 function sendsms ($smskey,$number,$message)
 {
-    	include ('config.php');
+    	include ('common.php');
 	GLOBAL $test;
 	GLOBAL $smsid;
 	GLOBAL $tlhash;
