@@ -75,13 +75,12 @@ $sth = $db->prepare('SELECT * FROM users WHERE username = :username ');
 
 function sendsms ($smskey,$number,$message)
 {
-    //leave var blank for using real credit or put value as 1 to test
-	$test = "";
+    	include ('config.php');
+	GLOBAL $test;
+	GLOBAL $smsid;
+	GLOBAL $tlhash;
+	GLOBAL $tlusername;
 	
-	// SMS Variables
-	$smsid = "Member";  // Sender id for sms
-	$tlhash = '';  // Textlocal API hash
-	$tlusername = ''; // Textlocal Username or Email address
 	
 
  
