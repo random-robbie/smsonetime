@@ -6,9 +6,18 @@
     $password = ""; 
     $host = "localhost"; 
     $dbname = ""; 
+    
+    //leave var blank for using real credit or put value as 1 to test
+	$test = "";
 	
+	// SMS Variables
+	$smsid = "Member";  // Sender id for sms
+	$tlhash = '';  // Textlocal API hash
+	$tlusername = ''; // Textlocal Username or Email address
+
+
     // UTF-8 is a character encoding scheme that allows you to conveniently store 
-    // a wide varienty of special characters, like ¢ or €, in your database. 
+    // a wide varienty of special characters, like ï¿½ or ï¿½, in your database. 
     // By passing the following $options array to the database connection code we 
     // are telling the MySQL server that we want to communicate with it using UTF-8 
     // See Wikipedia for more information on UTF-8: 
