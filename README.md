@@ -20,6 +20,4 @@ Don't forget to import the users.sql file!
 
 tested on lighthttpd but apache should work fine.
 
-
-
 Any Issues or happy to donate via paypal txt3rob@gmail.com
